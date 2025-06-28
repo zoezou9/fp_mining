@@ -20,7 +20,12 @@ def main():
 
     df = pd.read_csv('./data/dataset_10000.csv', sep='delimiter', header=None, engine='python')
     txns = df[0].str.split(',').tolist()
-    txns = [[i for i in t if i != '-1' or i != ''] for t in txns]
+    # txns = [[i for i in t if i != '-1' and i != ''] for t in txns]
+    txns = [
+        [item.strip() for item in txn
+        if item.strip() and item.strip() != '-1']
+        for txn in txns
+    ]
     freq_counter = Counter(i for t in txns for i in t)
     unique_items = sorted(freq_counter)
     print(">> Unique items (before encoding):", unique_items, "count =", len(unique_items), flush=True)
