@@ -16,11 +16,15 @@ def main():
     results = {}
     # --- 1. 載入資料---
     t0 = time.time()
-    df = pd.read_csv('./dataset_10000.csv', sep='delimiter', header=None, engine='python')
+    print("Loading dataset...", t0)
+
+    df = pd.read_csv('./data/dataset_10000.csv', sep='delimiter', header=None, engine='python')
     txns = df[0].str.split(',').tolist()
-    txns = [[i for i in t if i != '-1'] for t in txns]
+    txns = [[i for i in t if i != '-1' or i != ''] for t in txns]
     freq_counter = Counter(i for t in txns for i in t)
     unique_items = sorted(freq_counter)
+    print(">> Unique items (before encoding):", unique_items, "count =", len(unique_items), flush=True)
+
     enc = LabelEncoder(); enc.fit(unique_items)
     N = len(txns)
     results['num_txns'] = N
@@ -29,6 +33,7 @@ def main():
 
     # --- 2. 特徵抽取 ---
     t1 = time.time()
+    print("Extracting features...", t1)
     real_root = type('FPNode', (), {'__init__': lambda s,code=None: setattr(s, 'children', {}) or setattr(s, 'count',0) or setattr(s,'code',code)})()
     real_root.count = 0
     features, labels = [], []
@@ -67,6 +72,7 @@ def main():
 
     # --- 3. XGBoost 依商品拆分模型 ---
     t2 = time.time()
+    print("Training models...", t2)
     tr, te = train_test_split(np.arange(len(y)), test_size=0.2, random_state=42)
     X_tr, y_tr = X[tr], y[tr]
     X_te, y_te = X[te], y[te]
@@ -87,6 +93,7 @@ def main():
 
     # --- 4. 預測 & 評估 ---
     t3 = time.time()
+    print("Evaluating models...", t3)
     proba = np.zeros((len(te), len(unique_items)))
     for i, idx in enumerate(te):
         xi = X[idx].reshape(1, -1)

@@ -33,9 +33,17 @@ pip install -r requirements.txt
 
 ```
 /usr/bin/time -v python3 fp_train.py 2>&1 | tee run.log
+/usr/bin/time -v python3 -u fp_train.py 2>&1 | tee run.log
 ```
 
-\*離開 venv
+see summary
+
+```
+jq . results_summary.json
+head -n 10 frequent_patterns.csv
+```
+
+離開 venv
 
 ```
 deactivate
