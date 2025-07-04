@@ -16,7 +16,8 @@ def main():
     results = {}
     # --- 1. 載入資料---
     t0 = time.time()
-    print("Loading dataset...", t0)
+    # transfer t0 to utc -4 time
+    print("Loading dataset...", time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t0 - 14400)))
 
     df = pd.read_csv('./data/dataset_10000.csv', sep='delimiter', header=None, engine='python')
     txns = df[0].str.split(',').tolist()
@@ -38,7 +39,7 @@ def main():
 
     # --- 2. 特徵抽取 ---
     t1 = time.time()
-    print("Extracting features...", t1)
+    print("Extracting features...", time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t1 - 14400)))
     real_root = type('FPNode', (), {'__init__': lambda s,code=None: setattr(s, 'children', {}) or setattr(s, 'count',0) or setattr(s,'code',code)})()
     real_root.count = 0
     features, labels = [], []
@@ -50,12 +51,25 @@ def main():
             # build feature vector
             pv = np.zeros(len(unique_items), int)
             for p in prefix: pv[p] = 1
+            
             cc = np.zeros(len(unique_items), int)
             for ch, nd in node.children.items(): cc[ch] = nd.count
+            
             pc, pl = node.count, len(prefix)
+            
             item = enc.inverse_transform([c])[0]
+            
             p_c = freq_counter[item]/N
-            p_p = freq_counter[prefix[-1]]/N if prefix else 1.0
+
+
+            # p_p = freq_counter[prefix[-1]]/N if prefix else 1.0
+            if prefix:
+                last_code = prefix[-1]
+                last_item = enc.inverse_transform([last_code])[0]
+                p_p = freq_counter[last_item] / N
+            else:
+                p_p = 1.0
+            
             edge_ct = node.children.get(c, type(node)()).count
             p_edge = edge_ct / N
             p_bound = p_c * p_p * p_edge
@@ -70,14 +84,20 @@ def main():
                 node.children[c] = nd
             node = node.children[c]; node.count += 1
             prefix.append(c)
+            
+            # if len(features) < 5:
+            #     print("DBG:", item, p_c, p_p, p_edge, p_bound, flush=True)
+
     real_root.count = N
     X = np.array(features); y = np.array(labels)
     results['feature_count'] = X.shape[0]
     results['feature_time_s'] = time.time() - t1
 
+    
+
     # --- 3. XGBoost 依商品拆分模型 ---
     t2 = time.time()
-    print("Training models...", t2)
+    print("Training models...", time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t2 - 14400)))
     tr, te = train_test_split(np.arange(len(y)), test_size=0.2, random_state=42)
     X_tr, y_tr = X[tr], y[tr]
     X_te, y_te = X[te], y[te]
@@ -98,7 +118,7 @@ def main():
 
     # --- 4. 預測 & 評估 ---
     t3 = time.time()
-    print("Evaluating models...", t3)
+    print("Evaluating models...", time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(t3 - 14400)))
     proba = np.zeros((len(te), len(unique_items)))
     for i, idx in enumerate(te):
         xi = X[idx].reshape(1, -1)
