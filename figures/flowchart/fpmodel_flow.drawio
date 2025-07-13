@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36" version="27.1.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.3">
   <diagram name="Page-1" id="qbjGMUxkLgchwoNclGbX">
-    <mxGraphModel dx="983" dy="521" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="925" dy="491" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -42,8 +42,31 @@
         <mxCell id="a4ZEh-FdcM3_LrJm83vu-15" value="&lt;font face=&quot;微軟正黑體&quot;&gt;與FP growth演算法的結果做比較&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="668" y="270" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PP2WKlUABdNB2sAtoyPN-1" value="&lt;font face=&quot;微軟正黑體&quot;&gt;資&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;料&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;輸&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;入&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="PP2WKlUABdNB2sAtoyPN-1" value="&lt;font face=&quot;微軟正黑體&quot;&gt;資&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;料&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;輸&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;入&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="58" y="184" width="30" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-7" target="nH5MnvahqNPkQcfj9bZL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_1: [[butter], [sugar], [lassi], [ghee], [milk], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="163" y="417" width="324" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-8" target="nH5MnvahqNPkQcfj9bZL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_2: [[butter, sugar], [lassi, ghee], [milk, butter], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="161.5" y="512" width="326" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="325" y="701" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_3: [[butter, sugar, ghee], [milk, butter, ghee], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+          <mxGeometry x="161.5" y="607" width="326" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-14" value="&lt;font face=&quot;標楷體&quot; style=&quot;font-size: 14px;&quot;&gt;當沒有任何候選樣式超過最小支持度時，計算結束&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="162" y="706" width="326" height="29" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
