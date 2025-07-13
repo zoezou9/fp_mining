@@ -48,13 +48,13 @@
         <mxCell id="nH5MnvahqNPkQcfj9bZL-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-7" target="nH5MnvahqNPkQcfj9bZL-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nH5MnvahqNPkQcfj9bZL-7" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_1: [[butter], [sugar], [lassi], [ghee], [milk], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-7" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;L_1: [[butter], [sugar], [lassi], [ghee], [milk], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="163" y="417" width="324" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nH5MnvahqNPkQcfj9bZL-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-8" target="nH5MnvahqNPkQcfj9bZL-10">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="nH5MnvahqNPkQcfj9bZL-8" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_2: [[butter, sugar], [lassi, ghee], [milk, butter], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-8" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;L_2: [[butter, sugar], [lassi, ghee], [milk, butter], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="161.5" y="512" width="326" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nH5MnvahqNPkQcfj9bZL-13" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="nH5MnvahqNPkQcfj9bZL-10">
@@ -62,7 +62,7 @@
             <mxPoint x="325" y="701" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="nH5MnvahqNPkQcfj9bZL-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;L_3: [[butter, sugar, ghee], [milk, butter, ghee], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
+        <mxCell id="nH5MnvahqNPkQcfj9bZL-10" value="&lt;font face=&quot;Times New Roman&quot; style=&quot;font-size: 14px;&quot;&gt;L_3: [[butter, sugar, ghee], [milk, butter, ghee], ...]&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f9f7ed;strokeColor=#36393d;" vertex="1" parent="1">
           <mxGeometry x="161.5" y="607" width="326" height="60" as="geometry" />
         </mxCell>
         <mxCell id="nH5MnvahqNPkQcfj9bZL-14" value="&lt;font face=&quot;標楷體&quot; style=&quot;font-size: 14px;&quot;&gt;當沒有任何候選樣式超過最小支持度時，計算結束&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
