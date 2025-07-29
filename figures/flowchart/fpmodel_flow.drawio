@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.5">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36" version="28.0.6">
   <diagram name="Page-1" id="qbjGMUxkLgchwoNclGbX">
-    <mxGraphModel dx="1048" dy="556" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+    <mxGraphModel dx="786" dy="417" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -48,7 +48,7 @@
         <mxCell id="a4ZEh-FdcM3_LrJm83vu-13" value="&lt;font face=&quot;微軟正黑體&quot;&gt;過濾&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;通過最小支持度&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;的樣式&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="452" y="305" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="a4ZEh-FdcM3_LrJm83vu-15" value="&lt;font face=&quot;微軟正黑體&quot;&gt;FP growth為基準&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;做比較&lt;/font&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="a4ZEh-FdcM3_LrJm83vu-15" value="&lt;font face=&quot;微軟正黑體&quot;&gt;輸出所有頻繁樣式&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="623" y="307" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="PP2WKlUABdNB2sAtoyPN-1" value="&lt;font face=&quot;微軟正黑體&quot;&gt;資&lt;/font&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;料&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;輸&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font face=&quot;微軟正黑體&quot;&gt;入&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
